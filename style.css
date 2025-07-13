@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base{
+    .container{
+        @apply px-6 py-12 max-w-7xl mt-12 mx-auto lg:px-8 lg:mt-10;
+    }
+    body{
+        @apply overflow-x-hidden
+    }
+    .anchor-hover{
+        @apply border-b border-dotted border-y-gray-300 hover:border-solid hover:border-gray-500
+    }
+    .gradient-hover-outer{
+        @apply bg-gray-50 border border-gray-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200;
+    }
+    .gradient-hover-inner{
+        @apply group-hover:bg-gradient-to-br group-hover:from-red-50 group-hover:via-purple-50 hover:to-yellow-50;
+    }
+    .h2-style{
+        @apply text-5xl sm:font-semibold mb-14 leading-normal max-w-5xl;
+    }
+}
